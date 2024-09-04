@@ -1,4 +1,4 @@
-This is a simple Lottery number generator .
+# This is a simple Lottery number generator .
 
 Which works as ::
     In this we pass the props from the Main root App ->
