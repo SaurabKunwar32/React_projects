@@ -1,0 +1,64 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4em;
+  height: calc(100vh - 63.4px);
+}
+
+.firstSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.firstSide h2 {
+  text-transform: uppercase;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 800;
+}
+
+.para {
+  font-size: 1.2rem;
+  max-width: 530px;
+  text-align: justify;
+}
+
+.connection {
+  display: flex;
+  gap: 2rem;
+}
+
+.cate {
+  background-color: rgb(237, 233, 233);
+  border: 2px solid black;
+  color: var(--black);
+}
+
+.other_platforms p {
+  font-size: 1.2rem;
+}
+
+.ohterPlat {
+  height: 50px;
+  width: 50px;
+  padding: 4px;
+}
+
+.ohterPlat img {
+  border-radius: 6px;
+}
+
+.secondSide {
+  display: grid;
+  place-content: center;
+}
+
+.serve img {
+  transform: scale(1.4) rotate(-7deg);
+  filter: drop-shadow(10px 40px 10px  grey);
+}
+
+
+

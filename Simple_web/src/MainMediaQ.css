@@ -1,0 +1,172 @@
+@media (max-width: 1410px) {
+  .firstSide h2 {
+    font-size: 90px;
+    line-height: 85px;
+  }
+}
+
+@media (max-width: 1299px) {
+  main {
+    gap: 2rem;
+    /* background-color: grey; */
+  }
+
+  .firstSide h2 {
+    font-size: 85px;
+    line-height: 75px;
+  }
+}
+
+@media (max-width: 1180px) {
+  main {
+    gap: 1rem;
+  }
+
+  .firstSide h2 {
+    font-size: 80px;
+    line-height: 75px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .firstSide h2 {
+    font-size: 70px;
+    line-height: 65px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .secondSide .serve {
+    display: grid;
+    place-content: center;
+  }
+}
+
+@media (max-width: 995px) {
+
+  .navBar .lists {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 180px;
+    z-index: 1;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    backdrop-filter: blur(20px);
+    background: hsla(10, 10%, 20%, 0.8);
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .navBar .lists li {
+    padding: 2rem 0 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 11;
+  }
+
+  .navBar .lists.view {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu .login {
+    display: none;
+  }
+
+  .menu .menuBox {
+    display: inline-block;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main .secondSide {
+    grid-row: 1;
+  }
+
+  .secondSide {
+    padding-top: 4rem;
+  }
+
+  .firstSide {
+    padding-top: 8rem;
+    align-items: center;
+  }
+
+  .firstSide h2 {
+    text-align: center;
+    line-height: 74px;
+  }
+
+  .firstSide .para {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .firstSide h2 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .firstSide h2 {
+    font-size: 50px;
+    line-height: 48px;
+  }
+
+  .serve {
+    width: 200px;
+    height: 200px;
+  }
+
+  .secondSide img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .firstSide {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 8px;
+    row-gap: 4rem;
+  }
+
+  .firstSide h2 {
+    padding: 0 10px;
+    font-size: 43px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  .firstSide h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 325px) {
+  .firstSide h2 {
+    font-size: 30px;
+  }
+}
