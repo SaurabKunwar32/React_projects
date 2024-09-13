@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(42, 40, 40);
+}
+
+main {
+  background-color: rgb(154, 153, 153);
+  height: 500px;
+  width: 400px;
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+form input {
+  font-size: 1.4rem;
+  outline: none;
+  padding: 0.5rem;
+}
+
+form label {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.message p {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+}
+
+.submit {
+  font-size: 1.5rem;
+  padding: 4px 8px;
+}
+
+button:active {
+  background: green;
+  color: white;
+}
+
+@media (max-width: 540px) {
+  main {
+    padding: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  main {
+    height: 100%;
+    width: 300px;
+    padding: 1rem 4px;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    height: 100%;
+    width: 200px;
+    padding: 1rem ;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  form input {
+    font-size: 0.9rem;
+  }
+
+  .message p {
+    font-size: 1.2rem;
+  }
+
+  .message h2{
+    font-size: 1rem;
+  }
+}
