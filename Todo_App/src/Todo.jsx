@@ -42,7 +42,7 @@ export default function Todo() {
 
   // To delete any todos
   let deleteUpdate = (id) => {
-    // we use filter to filter out any element that we dont need.
+    // we use filter to filter out any element from list that we dont need.
     setTodo(todo.filter((tods) => tods.id != id));
   };
 
