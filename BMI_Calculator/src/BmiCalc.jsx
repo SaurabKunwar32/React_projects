@@ -9,6 +9,12 @@ export default function Bmi() {
 
   let calculateBMI = (e) => {
     e.preventDefault();
+
+    if (height === "0" || height === "" || weight === "0" || weight === "") {
+      alert("Weight and height cannot be zero or empty!");
+      return;
+    }
+
     let bmi = (weight / (height * height)) * 703;
     setBmi(`Your BMI is : ${bmi.toFixed(1)}`); // this to fixed help us to fix the number after point
     if (bmi < 25) {
@@ -20,6 +26,7 @@ export default function Bmi() {
     }
 
     setWeight("");
+
     setheight("");
   };
 
@@ -28,6 +35,7 @@ export default function Bmi() {
   let handleweight = (event) => {
     setWeight(event.target.value);
   };
+
   let handleheight = (event) => {
     setheight(event.target.value);
   };
@@ -40,12 +48,13 @@ export default function Bmi() {
           <label htmlFor="weight">Weight in(lbs):</label>
           &nbsp;
           <input
-            type="text"
+            type="number"
             name="weight"
             id="weight"
             placeholder="Enter weight ..."
             value={weight}
             onChange={handleweight}
+            step="any"
             required
           />
         </div>
@@ -54,12 +63,13 @@ export default function Bmi() {
           <label htmlFor="height">Height in(in):</label>
           &nbsp;
           <input
-            type="text"
+            type="number"
             className="height"
             id="height"
             placeholder="Enter height ..."
             value={height}
             onChange={handleheight}
+            step="any"
             required
           />
         </div>
