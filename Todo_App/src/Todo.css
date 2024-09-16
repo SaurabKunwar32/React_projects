@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(249, 247, 247);
+}
+
+.todo {
+  /* background-color: red; */
+  width: 38rem;
+  height: 100%;
+  /* border: 2px solid black; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.ull {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.lii {
+  font-size: 1.3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  align-items: center;
+}
+
+/* #AddBtn:active{
+    border: none;
+} */
+
+#delBtn {
+  color: red;
+  border: 1px solid red;
+}
